@@ -297,7 +297,7 @@ const SchoolLife = () => {
                         <div data-aos="fade-right">
                             <div className="bg-linear-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white h-full">
                                 <div className="flex items-center space-x-3 mb-6">
-                                    <div className="w-12 h-12 rounded-xl bg-linear-to-r from-amber-500 to-amber-600 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center">
                                         <FaChurch className="text-xl" />
                                     </div>
                                     <h3 className="text-2xl font-bold text-amber-400">Liturgy Program</h3>
@@ -328,7 +328,7 @@ const SchoolLife = () => {
                         </div>
 
                         <div data-aos="fade-left">
-                            <div className="bg-linear-to-br from-amber-500 to-amber-600 rounded-2xl p-8 text-white h-full">
+                            <div className="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-8 text-white h-full">
                                 <div className="flex items-center space-x-3 mb-6">
                                     <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
                                         <FaCalendarAlt className="text-xl" />
@@ -342,7 +342,7 @@ const SchoolLife = () => {
                                             className="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1"
                                         >
                                             <div className="flex items-center space-x-3 mb-2">
-                                                <div className={`w-10 h-10 rounded-lg bg-linear-to-r ${activity.color} flex items-center justify-center text-white`}>
+                                                <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${activity.color} flex items-center justify-center text-white`}>
                                                     {activity.icon}
                                                 </div>
                                                 <div className="flex-1">

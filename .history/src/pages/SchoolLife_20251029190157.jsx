@@ -342,7 +342,7 @@ const SchoolLife = () => {
                                             className="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1"
                                         >
                                             <div className="flex items-center space-x-3 mb-2">
-                                                <div className={`w-10 h-10 rounded-lg bg-linear-to-r ${activity.color} flex items-center justify-center text-white`}>
+                                                <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${activity.color} flex items-center justify-center text-white`}>
                                                     {activity.icon}
                                                 </div>
                                                 <div className="flex-1">
