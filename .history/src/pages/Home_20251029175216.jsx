@@ -14,10 +14,6 @@ import {
 import { useEffect } from 'react'
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-
-  }, [])
   const features = [
     {
       icon: <FaGraduationCap className="text-2xl sm:text-3xl" />,
@@ -82,56 +78,56 @@ const Home = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center mt-0 overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/soutien4.webp)' }} // Replace with your image filename
-        ></div>
+     <section className="relative min-h-screen flex items-center justify-center mt-0 overflow-hidden">
+  {/* Background Image */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: 'url(/soutien4.webp)' }} // Replace with your image filename
+  ></div>
+  
+  {/* Dark Overlay for better text readability */}
+  <div className="absolute inset-0 bg-gray-900/70"></div>
 
-        {/* Dark Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gray-900/70"></div>
+  {/* Simplified Background Pattern */}
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-emerald-500/20"></div>
+  </div>
 
-        {/* Simplified Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-emerald-500/20"></div>
-        </div>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+        Welcome to
+        <span className="block text-amber-400 mt-2 sm:mt-4">St. Louis The King</span>
+      </h1>
+      <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+        A Catholic institution dedicated to academic excellence and holistic development
+        of students in Kampala, Uganda. <span className="text-amber-400 font-semibold">"VIVO UT SERVIAM"</span>
+      </p>
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+        <Link
+          to="/admissions"
+          className="group bg-amber-500 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg hover:bg-amber-400 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2"
+        >
+          <span>Start Your Journey</span>
+          <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+        </Link>
+        <Link
+          to="/about"
+          className="group border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
+        >
+          <span>Discover More</span>
+        </Link>
+      </div>
+    </div>
+  </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div data-aos="fade-up" data-aos-delay="200">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-              Welcome to
-              <span className="block text-amber-400 mt-2 sm:mt-4">St. Louis The King</span>
-            </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
-              A Catholic institution dedicated to academic excellence and holistic development
-              of students in Kampala, Uganda. <span className="text-amber-400 font-semibold">"VIVO UT SERVIAM"</span>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-              <Link
-                to="/admissions"
-                className="group bg-amber-500 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg hover:bg-amber-400 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2"
-              >
-                <span>Start Your Journey</span>
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-              <Link
-                to="/about"
-                className="group border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
-              >
-                <span>Discover More</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-2 sm:h-3 bg-white rounded-full mt-2"></div>
-          </div>
-        </div>
-      </section>
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white rounded-full flex justify-center">
+      <div className="w-1 h-2 sm:h-3 bg-white rounded-full mt-2"></div>
+    </div>
+  </div>
+</section>
       {/* Quote Section */}
       <section className="bg-linear-to-r from-amber-500 to-amber-400 py-12 sm:py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/5"></div>

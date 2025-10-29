@@ -82,7 +82,7 @@ const Home = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center mt-0 overflow-hidden">
+      <section className="relative m mt-0 overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

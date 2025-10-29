@@ -7,11 +7,6 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
 
-  useEffect(() =>{
-    window.scrollTo(0,0)
-
-  }, [])
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -30,7 +25,7 @@ const Header = () => {
   ]
 
   return (
-    <header className={`fixed w-full  z-50 transition-all duration-300 ${isScrolled
+    <header className={`fixed w-full max- z-50 transition-all duration-300 ${isScrolled
         ? 'bg-white/95 backdrop-blur-md shadow-lg py-2'
         : 'bg-linear-to-r from-blue-800 to-blue-900 py-3'
       }`}>

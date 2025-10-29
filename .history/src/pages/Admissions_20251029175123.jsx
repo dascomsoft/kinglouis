@@ -13,14 +13,8 @@ import {
   FaUserGraduate
 } from 'react-icons/fa'
 
-import { useEffect } from 'react'
 
 const Admissions = () => {
-
-    useEffect(() =>{
-      window.scrollTo(0,0)
-  
-    }, [])
   const [activeTab, setActiveTab] = useState('fees')
 
   const feeStructure = {
@@ -86,7 +80,7 @@ const Admissions = () => {
   return (
     <div className="pt-20 sm:pt-24 lg:pt-18 pb-12 sm:pb-16">
       {/* Header Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 text-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 text-white py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl text-amber-400 sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6" data-aos="fade-up">
             Admissions

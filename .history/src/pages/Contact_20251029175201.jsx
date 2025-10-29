@@ -14,7 +14,6 @@ const Contact = () => {
       useEffect(() =>{
         window.scrollTo(0,0)
       }, [])
-
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -88,9 +87,9 @@ _Sent via School Website_`
     return (
         <div className="pt-20">
             {/* Header Section */}
-            <section className="relative min-h-[50vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
+            <section className="relative min-h-[40vh] flex items-center justify-center bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
                 <div className="absolute inset-0 opacity-5">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-amber-500/20"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-amber-500/20"></div>
                 </div>
 
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

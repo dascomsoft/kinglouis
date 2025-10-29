@@ -7,10 +7,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
 
-  useEffect(() =>{
-    window.scrollTo(0,0)
-
-  }, [])
+  useEff
 
   useEffect(() => {
     const handleScroll = () => {

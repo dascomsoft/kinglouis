@@ -177,7 +177,7 @@ const SchoolLife = () => {
     return (
         <div className="pt-20">
             {/* Header Section */}
-            <section className="relative min-h-[50vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
+            <section className="relative min-h-[60vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-amber-500/20"></div>
                 </div>

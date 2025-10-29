@@ -21,13 +21,9 @@ import {
     FaGavel,
     FaShieldAlt
 } from 'react-icons/fa'
-import { useEffect } from 'react'
+import
 
 const SchoolLife = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-
-    }, [])
     const rules = [
         {
             icon: <FaUserFriends />,
@@ -177,7 +173,7 @@ const SchoolLife = () => {
     return (
         <div className="pt-20">
             {/* Header Section */}
-            <section className="relative min-h-[50vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
+            <section className="relative min-h-[60vh] flex items-center justify-center bg-linear-to-br from-gray-800 via-gray-900 to-gray-950 overflow-hidden">
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-amber-500/20"></div>
                 </div>
@@ -250,9 +246,9 @@ const SchoolLife = () => {
                                             <div>
                                                 <h3 className="text-xl font-bold text-gray-800">{rule.title}</h3>
                                                 <span className={`inline-block mt-1 px-2 py-1 rounded-full text-xs font-semibold ${rule.severity === 'very-high' ? 'bg-red-100 text-red-800' :
-                                                    rule.severity === 'high' ? 'bg-orange-100 text-orange-800' :
-                                                        rule.severity === 'medium' ? 'bg-yellow-100 text-yellow-800' :
-                                                            'bg-blue-100 text-blue-800'
+                                                        rule.severity === 'high' ? 'bg-orange-100 text-orange-800' :
+                                                            rule.severity === 'medium' ? 'bg-yellow-100 text-yellow-800' :
+                                                                'bg-blue-100 text-blue-800'
                                                     }`}>
                                                     {getSeverityText(rule.severity)} Severity
                                                 </span>
